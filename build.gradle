@@ -38,3 +38,8 @@ dependencies {
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+task wrapper(type: Wrapper) {
+      gradleVersion = '3.2.1'
+          distributionUrl = 'http://services.gradle.org/distributions/gradle-3.2.1-all.zip'
+}
