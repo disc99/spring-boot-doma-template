@@ -31,15 +31,18 @@ repositories {
 
 
 dependencies {
-//	compile('org.flywaydb:flyway-core')
+	compile 'org.seasar.doma:doma:2.14.0'
+	compile('org.flywaydb:flyway-core')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.seasar.doma.boot:doma-spring-boot-starter:1.1.0')
+
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
+
 task wrapper(type: Wrapper) {
-      gradleVersion = '3.2.1'
-          distributionUrl = 'http://services.gradle.org/distributions/gradle-3.2.1-all.zip'
+      gradleVersion = '3.3'
+          distributionUrl = 'http://services.gradle.org/distributions/gradle-3.3-all.zip'
 }

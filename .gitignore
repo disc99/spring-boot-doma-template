@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/a5481c9e3a7ad99474107720058556d62e9419ca/java.gitignore
+### https://raw.github.com/github/gitignore/a5481c9e3a7ad99474107720058556d62e9419ca/Java.gitignore
 
 *.class
 
@@ -35,23 +35,6 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 
-### https://raw.github.com/github/gitignore/a5481c9e3a7ad99474107720058556d62e9419ca/Maven.gitignore
-
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-
-# Exclude maven wrapper
-!/.mvn/wrapper/maven-wrapper.jar
-
-
-# 
-.idea/
-.mvn
-
+# IntelliJ IDEA
+.idea
+classes

@@ -18,8 +18,6 @@ package org.seasar.doma.boot;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
-import org.seasar.doma.jdbc.SelectOptions;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.domain.Pageable;
@@ -30,13 +28,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
+@AllArgsConstructor
 public class DomaBootSampleSimpleApplication {
 
 	MessageDao messageDao;
-
-	public DomaBootSampleSimpleApplication(MessageDao messageDao) {
-		this.messageDao = messageDao;
-	}
 
 	@RequestMapping("/")
 	List<Message> list(@PageableDefault Pageable pageable) {
