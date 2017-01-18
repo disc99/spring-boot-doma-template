@@ -17,6 +17,7 @@ apply plugin: 'org.springframework.boot'
 
 processResources.destinationDir = compileJava.destinationDir
 compileJava.dependsOn processResources
+idea.module.inheritOutputDirs = true
 
 jar {
 	baseName = 'spring-boot-doma-template'
