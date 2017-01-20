@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @AllArgsConstructor
-public class DomaBootSampleSimpleApplication {
+public class DomaBootTemplateApplication {
 
 	MessageDao messageDao;
 
@@ -32,6 +32,6 @@ public class DomaBootSampleSimpleApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(DomaBootSampleSimpleApplication.class, args);
+		SpringApplication.run(DomaBootTemplateApplication.class, args);
 	}
 }

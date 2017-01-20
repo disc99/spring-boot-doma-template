@@ -1,0 +1,4 @@
+doma:
+  dialect: H2
+
+logging.level.org.springframework.jdbc.datasource.DataSourceTransactionManager: DEBUG
